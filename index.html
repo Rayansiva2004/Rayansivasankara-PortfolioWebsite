@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
+    <title> protfolio - Profile </title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'/>
+</head>
+<body> 
+        <nav id="desktop-nav">
+            <div class="logo">Rayan Siva Sankara.K</div>
+            <div>
+              <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div> 
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Rayan Siva Sankara.K</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skill</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+            </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="assets/profile-pic.png" alt="Rayan siva sankara profile picture" class="profile_pic"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Rayan Siva Sankara k</h1>
+                <p class="section__text__p2">Software Developer</p>
+                    <div class="btn-container">
+                        <button
+                         class="btn btn-color-2"
+                         onclick="window.open('./assets/RAYAN SIVA SANKARA K resume .pdf')"
+                         >
+                           Download resume
+                    </button>
+                        <button class="btn btn-color-1" onclick="location.href='#contact'">
+                            Contact info
+                        </button>
+                    </div>
+                    <div id="social-container">
+                        <img  
+                        src="./assets/linkedin.png"  
+                        alt="My LinkedIn profile"
+                        class="icon" 
+                        onclick="location.href='https://www.linkedin.com/in/rayan-sivasankara'"
+                        />
+                        <img 
+                        src="./assets/github.png" 
+                        alt="My GitHub profile"
+                        class="icon"
+                         onclick="location.href='https://github.com/Rayansiva2004'"
+                         />
+                        <img 
+                        src="./assets/instagram.png" 
+                        alt="My Instagram profile"
+                        class="instagram-icon"
+                         onclick="location.href='https://instagram.com/rayan._.sivasankara'"
+                         />
+                    </div>
+                </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+               <div class="section__pic-container">
+                <img 
+                src="./assets/about-pic .png"
+                alt="profile picture"
+                class="about-pic"/>
+            </div> 
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-containers">
+                     <img 
+                       src="./assets/experience.png" 
+                       alt="Experience icon"
+                       class="experience-icon"
+                     />
+                     <h3>Experience</h3>
+                      <p>Fresher <br /> Software Developer </p>
+                  </div>
+                <div class="details-containers">
+                    <img 
+                    src="./assets/education.png" 
+                    alt="Education icon"
+                    class="education-icon"
+                    />
+                    <h3>Education</h3>
+                    <p>Bachelor of Engineering <br /> Computer Science <br /> CGPA: 8.3 </p>
+                </div>
+            </div>
+                <div class="text-container">
+                    <p>
+                        I completed my Bachelor’s degree of Computer Science Engineering at Jeppiaar Institute of Technologies, 
+                        where I discovered my passion for creating things using code. That’s what led me to start learning more about
+                        software development, SQL Database, especially in Web technologies like HTML, CSS, and JavaScript and React.js
+                        Back-End technology like Core Java, Node.js.
+
+                        During my studies, I worked on a project called Smart Highway Assistant,
+                        where I built a web-based system to improve highway safety using simple, user-friendly design. 
+                        It gave me hands-on experience in building real applications that solve real problems.
+                    </p>
+                </div>
+             </div>
+       </div>
+        
+        </section>
+       <!--===== SKILLS =====-->
+       <section class="skills section" id="skills">
+        <h2 class="title">Skills</h2>
+
+        <div class="skills__container bd-grid">          
+            <div>
+                <h2 class="skills__subtitle">Professional Skills</h2>
+                <p class="skills__text">Front-End Development</p>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-html5 skills__icon'></i>
+                        <span class="skills__name">HTML</span>
+                    </div>
+                    <div class="skills__bar skills__html"></div>
+                    <div>
+                        <span class="skills__percentage">90%</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-css3 skills__icon'></i>
+                        <span class="skills__name">CSS</span>
+                    </div>
+                    <div class="skills__bar skills__css">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">90%</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-javascript skills__icon' ></i>
+                        <span class="skills__name">JavaScript</span>
+                    </div>
+                    <div class="skills__bar skills__js">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">73%</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-react  skills__icon' ></i>
+                        <span class="skills__name">React.js</span>
+                    </div>
+                    <div class="skills__bar skills__react">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">68%</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxs-paint skills__icon'></i>
+                        <span class="skills__name">UI/UX</span>
+                    </div>
+                    <div class="skills__bar skills__ux">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">85%</span>
+                    </div>
+                </div>
+                <p class="skills__text">Back-End Development</p>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i><svg width="35px" height="35px" viewBox="-7 -7 84.00 84.00" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="0.0007"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <metadata> <rdf:rdf> <cc:work> <dc:subject> Data </dc:subject> <dc:identifier> sql-database-generic </dc:identifier> <dc:title> SQL Database (Generic) </dc:title> <dc:format> image/svg+xml </dc:format> <dc:publisher> Amido Limited </dc:publisher> <dc:creator> Richard Slater </dc:creator> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type> </cc:work> </rdf:rdf> </metadata> <path d="m 852.97077,1013.9363 c -6.55238,-0.4723 -13.02857,-2.1216 -17.00034,-4.3296 -2.26232,-1.2576 -3.98589,-2.8032 -4.66223,-4.1807 l -0.4024,-0.8196 0,-25.70807 0,-25.7081 0.31843,-0.6465 c 1.42297,-2.889 5.96432,-5.4935 12.30378,-7.0562 2.15195,-0.5305 5.2586,-1.0588 7.79304,-1.3252 2.58797,-0.2721 9.44765,-0.2307 12.02919,0.073 6.86123,0.8061 12.69967,2.6108 16.29768,5.0377 1.38756,0.9359 2.81137,2.4334 3.29371,3.4642 l 0.41358,0.8838 -0.0354,25.6303 -0.0354,25.63047 -0.33195,0.6744 c -0.18257,0.3709 -0.73406,1.1007 -1.22553,1.6216 -2.99181,3.1715 -9.40919,5.5176 -17.8267,6.5172 -1.71567,0.2038 -9.16916,0.3686 -10.92937,0.2417 z m 12.07501,-22.02839 c -0.0252,-0.0657 -1.00472,-0.93831 -2.17671,-1.93922 -1.17199,-1.00091 -2.18138,-1.86687 -2.24309,-1.92436 -0.0617,-0.0575 0.15481,-0.26106 0.48117,-0.45237 0.32635,-0.19131 0.95163,-0.7235 1.3895,-1.18265 1.2805,-1.34272 1.88466,-3.00131 1.88466,-5.17388 0,-2.1388 -0.65162,-3.8645 -1.95671,-5.1818 -1.31533,-1.3278 -2.82554,-1.8983 -5.02486,-1.8983 -3.39007,0 -5.99368,1.9781 -6.82468,5.1851 -0.28586,1.1031 -0.28432,3.33211 0.003,4.31023 0.74941,2.55136 2.79044,4.40434 5.33062,4.83946 0.8596,0.14724 0.97605,0.21071 1.5621,0.85144 0.34829,0.38078 1.06301,1.14085 1.58827,1.68904 l 0.95501,0.9967 2.53878,0 c 1.39633,0 2.51816,-0.0537 2.49296,-0.11939 z m -8.70653,-7.10848 c -0.61119,-0.31868 -0.84225,-0.56599 -1.19079,-1.27453 -0.26919,-0.54724 -0.31522,-0.85851 -0.31824,-2.15197 -0.003,-1.3143 0.0388,-1.5983 0.31987,-2.169 0.45985,-0.9339 1.09355,-1.376 2.07384,-1.4469 1.36454,-0.099 2.15217,0.5707 2.56498,2.1801 0.50612,1.97321 -0.0504,4.07107 -1.26471,4.76729 -0.63707,0.36527 -1.58737,0.40659 -2.18495,0.095 z m -11.25315,3.66269 c 2.66179,-0.5048 4.1728,-2.0528 4.1728,-4.27495 0,-1.97137 -0.97548,-3.12004 -3.6716,-4.32364 -1.54338,-0.689 -2.10241,-1.1215 -2.10241,-1.6268 0,-0.4188 0.53052,-0.8777 1.14813,-0.993 0.60302,-0.1126 2.20237,0.1652 3.14683,0.5467 l 0.79167,0.3198 0,-1.7524 0,-1.7525 -0.85923,-0.1906 c -0.53103,-0.1178 -1.64689,-0.1885 -2.92137,-0.1849 -1.80528,0 -2.15881,0.044 -2.83818,0.3138 -1.98445,0.7878 -2.92613,2.1298 -2.91107,4.1485 0.0141,1.8898 1.01108,3.06864 3.49227,4.12912 1.46399,0.62572 2.05076,1.10218 2.05076,1.66522 0,1.1965 -1.99362,1.34375 -4.10437,0.30315 -0.57805,-0.28498 -1.09739,-0.54137 -1.1541,-0.56976 -0.0567,-0.0284 -0.10311,0.79023 -0.10311,1.81917 0,1.86239 0.002,1.87137 0.33919,1.99974 1.26979,0.48278 4.07626,0.69787 5.52379,0.42335 z m 30.4308,-1.72766 0,-1.58098 -2.40584,0 -2.40583,0 0,-5.43035 0,-5.4303 -2.13089,0 -2.13088,0 0,7.0113 0,7.01131 4.53672,0 4.53672,0 0,-1.58098 z m -14.84745,-27.70503 c 4.23447,-0.2937 7.4086,-0.8482 10.20178,-1.7821 2.78264,-0.9304 4.42643,-2.0562 4.79413,-3.2834 0.14166,-0.4729 0.13146,-0.6523 -0.0665,-1.1708 -0.88775,-2.3245 -5.84694,-4.1104 -13.42493,-4.8345 -3.24154,-0.3098 -9.13671,-0.2094 -12.22745,0.2081 -4.71604,0.6372 -8.54333,1.8208 -10.2451,3.1683 -3.44251,2.726 0.19793,5.7242 8.66397,7.1354 3.67084,0.6119 8.42674,0.828 12.30414,0.559 z" fill="#2349ba" transform="translate(-830.906 -943.981)"></path> </g></svg></i>
+                        <span class="skills__name">SQL Database</span>
+                    </div>
+                    <div class="skills__bar skills__sql">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">92%</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                       <i><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"  
+                        fill="#2349ba" viewBox="0 0 24 24" >
+                        <path d="M9.37 17.51c-3.09.86 1.87 2.64 5.8 1a7 7 0 0 1-1.1-.54 11.6 11.6 0 0 1-4.16.18c-1.31-.15-.54-.64-.54-.64m5.33-1.68a16.3 16.3 0 0 1-5.36.26c-1.31-.14-.45-.77-.45-.77-3.4 1.12 1.89 2.4 6.64 1a2.25 2.25 0 0 1-.83-.49m1.82-9.73s-6.87 1.71-3.59 5.49a1.47 1.47 0 0 1-.25 2.12s2.46-1.27 1.33-2.86-1.86-2.22 2.51-4.75"></path><path d="M18.13 19.14s.56.46-.63.82c-2.27.69-9.43.9-11.42 0-.72-.31.62-.74 1-.83a2.5 2.5 0 0 1 .69-.08c-.8-.56-5.15 1.1-2.21 1.58 8.05 1.37 14.64-.56 12.57-1.49m-2.76-4.88a7 7 0 0 1 .92-.49s-1.51.27-3 .4a28 28 0 0 1-4.82.05C6.09 13.91 9.74 13 9.74 13a6.8 6.8 0 0 0-3.16.75c-2.06 1.03 5.09 1.48 8.79.51m.91 2.44a.4.4 0 0 1-.08.09c5-1.32 3.18-4.65.78-3.81a.7.7 0 0 0-.33.25s.14-.05.43-.12c1.22-.25 2.92 1.63-.8 3.59M12 13c-.74-1.67-3.26-3.14 0-5.71C16.09 4.08 14 2 14 2c.84 3.31-3 4.31-4.34 6.37-.93 1.41.47 2.92 2.34 4.63"></path><path d="M16.41 21.32a29.8 29.8 0 0 1-9.14.14s.46.38 2.84.53c3.61.23 9.15-.12 9.29-1.83 0 0-.26.64-2.99 1.16"></path>
+                        </svg></i>
+                        <span class="skills__name">Core java</span>
+                    </div>
+                    <div class="skills__bar skills__java">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">80%</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i><svg  xmlns="http://www.w3.org/2000/svg" width="35" height="35"  
+                            fill="#2349ba" viewBox="0 0 24 24" >
+                            <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                            <path d="M12 21.985c-.275 0-.532-.074-.772-.202l-2.439-1.448c-.365-.203-.182-.277-.072-.314.496-.165.588-.201 1.101-.493.056-.037.129-.02.185.017l1.87 1.12c.074.036.166.036.221 0l7.319-4.237c.074-.036.11-.11.11-.202V7.768c0-.091-.036-.165-.11-.201l-7.319-4.219c-.073-.037-.165-.037-.221 0L4.552 7.566c-.073.036-.11.129-.11.201v8.457c0 .073.037.166.11.202l2 1.157c1.082.548 1.762-.095 1.762-.735V8.502c0-.11.091-.221.22-.221h.936c.108 0 .22.092.22.221v8.347c0 1.449-.788 2.294-2.164 2.294-.422 0-.752 0-1.688-.46l-1.925-1.099a1.55 1.55 0 0 1-.771-1.34V7.786c0-.55.293-1.064.771-1.339l7.316-4.237a1.64 1.64 0 0 1 1.544 0l7.317 4.237c.479.274.771.789.771 1.339v8.458c0 .549-.293 1.063-.771 1.34l-7.317 4.236c-.241.11-.516.165-.773.165m2.256-5.816c-3.21 0-3.87-1.468-3.87-2.714 0-.11.092-.221.22-.221h.954c.11 0 .201.073.201.184.147.971.568 1.449 2.514 1.449 1.54 0 2.202-.35 2.202-1.175 0-.477-.185-.825-2.587-1.063-1.999-.2-3.246-.643-3.246-2.238 0-1.485 1.247-2.366 3.339-2.366 2.347 0 3.503.809 3.649 2.568a.3.3 0 0 1-.056.165c-.037.036-.091.073-.146.073h-.953a.21.21 0 0 1-.202-.164c-.221-1.012-.789-1.34-2.292-1.34-1.689 0-1.891.587-1.891 1.027 0 .531.237.696 2.514.99 2.256.293 3.32.715 3.32 2.294-.02 1.615-1.339 2.531-3.67 2.531"></path>
+                            </svg></i>
+                        <span class="skills__name">Node.js</span>
+                    </div>
+                    <div class="skills__bar skills__nodejs">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">65%</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i><svg  xmlns="http://www.w3.org/2000/svg" width="35" height="35"  
+                            fill="#2349ba" viewBox="0 0 24 24" >
+                            <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                            <path d="M13.74 4.23c-.84-1-1.57-2-1.71-2.22H12c-.14.21-.87 1.22-1.71 2.22-7.2 9.19 1.14 15.39 1.14 15.39l.07.05c.06.95.22 2.33.22 2.33h.62s.15-1.37.21-2.33l.07-.06s8.32-6.19 1.12-15.38M12 19.48a3.5 3.5 0 0 1-.48-.48L12 9l.45 10a3.6 3.6 0 0 1-.45.48"></path>
+                            </svg></i>
+                        <span class="skills__name">MongoDB</span>
+                    </div>
+                    <div class="skills__bar skills__mongodb">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">50%</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i><svg  xmlns="http://www.w3.org/2000/svg" width="35" height="35"  
+                            fill="#2349ba" viewBox="0 0 24 24" >
+                            <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                            <path d="M15.44 6.61c.05.08.13.15.18.22s.09.18.13.27a.31.31 0 0 0 .12-.28s0-.08-.07-.12-.1-.08-.15-.12zM5.54 13l-1.12 3.36L3.3 13h-1c-.18 1.44-.29 3-.34 4.61h.7c0-1.35.08-2.57.17-3.67L4 17.58h.59l1.21-3.67c.12 1.15.2 2.37.23 3.67h.77c0-1.39-.16-2.93-.36-4.61zm3.19 4.08a2.9 2.9 0 0 0-.17-.93l-.61-2h-.76L8 16.81a3.2 3.2 0 0 1 .19.79.66.66 0 0 1-.25.5.77.77 0 0 1-.54.19h-.32v.41a1.5 1.5 0 0 0 .47.11 1.66 1.66 0 0 0 1.32-.89 10.4 10.4 0 0 0 1.25-3.72h-.7a12.7 12.7 0 0 1-.69 2.88m10.24-4.11h-.73v4.61h2.19v-.56h-1.46zM17 17.07a2.83 2.83 0 0 0 .54-1.88c0-1.52-.6-2.29-1.8-2.29a1.7 1.7 0 0 0-1.37.58 2.85 2.85 0 0 0-.54 1.88 2.72 2.72 0 0 0 .48 1.78 1.63 1.63 0 0 0 1.31.51 2.4 2.4 0 0 0 .61-.08l1.1.64.3-.52-.85-.41a2 2 0 0 0 .22-.21m-1.3 0a.88.88 0 0 1-.81-.42 2.8 2.8 0 0 1-.28-1.45q0-1.74 1-1.74a.9.9 0 0 1 .82.42 2.9 2.9 0 0 1 .28 1.43c.08 1.18-.28 1.77-.98 1.77zM13 15.33l-1-.56c-.36-.2-.56-.43-.56-.71a.56.56 0 0 1 .21-.43.76.76 0 0 1 .54-.17 2.2 2.2 0 0 1 .89.19l.18-.4a2.1 2.1 0 0 0-1.17-.34 1.48 1.48 0 0 0-1 .35 1.14 1.14 0 0 0-.39.9 1.09 1.09 0 0 0 .52 1l1 .55c.35.2.54.43.54.7a.64.64 0 0 1-.25.52 1 1 0 0 1-.65.18 2.24 2.24 0 0 1-1-.27l-.2.39a2.3 2.3 0 0 0 1.31.43 1.72 1.72 0 0 0 1.16-.37 1.24 1.24 0 0 0 .43-1 1.09 1.09 0 0 0-.56-.96"></path><path d="M21.74 12.89a2.8 2.8 0 0 0-.58-.56c-.17-.12-.56-.29-.64-.5a1.7 1.7 0 0 0 .39-.09c.19-.05.36 0 .55-.09l.27-.07v-.05c-.1-.1-.17-.24-.28-.33a6.3 6.3 0 0 0-.92-.69c-.17-.11-.39-.18-.58-.28s-.17-.05-.21-.1a2.2 2.2 0 0 1-.23-.43c-.16-.31-.32-.65-.46-1s-.16-.43-.28-.64A5.7 5.7 0 0 0 16.6 6a2.5 2.5 0 0 0-.71-.23h-.42a3 3 0 0 1-.26-.19c-.31-.21-1.13-.64-1.37-.07-.15.37.23.72.36.91a3 3 0 0 1 .28.41c0 .1 0 .2.09.3a7 7 0 0 0 .29.75 4 4 0 0 0 .2.34c0 .06.13.09.14.19a1.7 1.7 0 0 0-.12.42 2.38 2.38 0 0 0 .16 1.87c.09.14.3.45.58.33s.2-.42.27-.7v-.15c.08.15.15.3.23.46a3.2 3.2 0 0 0 .72.75c.13.1.24.27.41.33a1 1 0 0 0-.13-.11 3 3 0 0 1-.29-.33 7.4 7.4 0 0 1-.63-1l-.2-.58c0-.07 0-.17-.09-.2a1.7 1.7 0 0 0-.27.38 3 3 0 0 0-.16.84c-.18 0-.24-.23-.31-.38a2.5 2.5 0 0 1 0-1.49c0-.12.21-.49.14-.6s-.14-.16-.2-.25a1.8 1.8 0 0 1-.2-.35c-.14-.32-.2-.66-.35-1a2.4 2.4 0 0 0-.28-.43 3 3 0 0 1-.3-.44.27.27 0 0 1 0-.23.1.1 0 0 1 .08-.07c.07-.06.28 0 .35.05a3 3 0 0 1 .55.28 1 1 0 0 0 .27.19h.11c.18 0 .38 0 .55.06a4 4 0 0 1 .8.39 5 5 0 0 1 1.74 1.9c.07.13.09.25.16.38s.26.55.37.82a4 4 0 0 0 .4.75c.08.11.42.17.57.24s.28.09.38.15l.56.38c.09.07.37.21.38.32a2.7 2.7 0 0 0-1.08.15c-.08 0-.21 0-.23.14s.05.12.09.18a1.6 1.6 0 0 0 .29.34l.36.26c.22.13.46.21.67.34s.25.18.37.26.1.12.18.15c0-.05-.05-.12-.09-.18zm-.95 4.22h.16v.47h.13v-.47h.16v-.09h-.45zm.9.29-.16-.38h-.17v.56h.11v-.43h.01l.16.43h.08l.17-.43v.43H22v-.56h-.17z"></path>
+                            </svg></i>
+                        <span class="skills__name">MySQL</span>
+                    </div>
+                    <div class="skills__bar skills__mysql">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage">65%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                <div class="details-containers color-container"> 
+                    <div class="article-container">
+                        <img 
+                        src="./assets/project-1.png" 
+                        alt="Project 1" 
+                        class="project-img"
+                         />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project one</h2>
+                    <div class="btn-container">
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Rayansiva2004/Smart-Highway-Assistant-System.git'">GitHub</button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Rayansiva2004/object_detection.git'">GitHub</button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three </h2>
+                    <div class="btn-container">
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Rayansiva2004/IOT_Phase2DataAnalysis.git'">GitHub</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="email-icon" />
+                    <p><a href="mailto:rayansivasankara@gmail.com">rayansivasankara@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="contact-icon" />
+                    <p><a onclick="location.href='https://www.linkedin.com/in/rayan-sivasankara'">LinkedIn</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/contact.png" alt="phone icon" class="phone-icon" />
+                    <p><a>+91 9385363668</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/instagram.png" alt="instagram icon" class="instagram-icon"
+                     onclick="location.href='https://instagram.com/rayan._.sivasankara'" /> <p><a onclick="location.href='https://instagram.com/rayan._.sivasankara'">rayan._.sivasankara</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skill</a></li>
+                        <li><a href="#projects">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2025 Rayan siva sankara. All Rights Reserved.</p>
+        </footer>
+
+                <!--===== SCROLL REVEAL =====-->
+                <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="script.js"></script>
+</body>
+</html>
